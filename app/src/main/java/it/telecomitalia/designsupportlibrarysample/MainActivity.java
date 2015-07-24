@@ -1,6 +1,7 @@
 package it.telecomitalia.designsupportlibrarysample;
 
 import android.content.res.Configuration;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.widget.DrawerLayout;
@@ -18,7 +19,7 @@ public class MainActivity extends ActionBarActivity {
     private FloatingActionButton fabBtn;
     private ActionBarDrawerToggle drawerToggle;
     private DrawerLayout drawerLayout;
-    private FrameLayout rootLayout;
+    private CoordinatorLayout rootLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +37,7 @@ public class MainActivity extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        rootLayout = (FrameLayout) findViewById(R.id.rootLayout);
+        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
 
         fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
         fabBtn.setOnClickListener(new View.OnClickListener() {
