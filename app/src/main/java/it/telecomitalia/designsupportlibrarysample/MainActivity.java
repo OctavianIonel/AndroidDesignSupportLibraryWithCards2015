@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         });
-        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 //        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
 //        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         if (viewPager != null) {
             setupViewPager(viewPager);
         }
+        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
     }
 
