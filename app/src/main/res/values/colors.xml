@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_dark_grey">#202020</color>
+    <color name="custom_white_grey">#A0A0A0</color>
+    <color name="custom_middle_grey">#606060</color>
+    <color name="custom_teal">#009688</color>
+    <color name="custom_red">#F44336</color>
+    <color name="defaultColor">#330000</color>
+    <color name="custom_yellow"> #FFEB3B</color>
+</resources>

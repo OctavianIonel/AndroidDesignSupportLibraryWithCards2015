@@ -8,7 +8,8 @@
 
 
     <!-- screen content: ToolBar, TabLayout, ViewPager, FAB, SnackBar -->
-    <include layout="@layout/screen_content"/>
+    <!--<include layout="@layout/screen_content"/>-->
+    <include layout="@layout/fragment_card_layout"/>
 
     <!-- navigation drawer list -->
     <android.support.design.widget.NavigationView

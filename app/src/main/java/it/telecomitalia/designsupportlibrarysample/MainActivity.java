@@ -72,6 +72,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
+        //by pressing on the floating action button, a snackbar will pop-up from the bottom of the screen
         fabBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -145,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    //adapter for adding fragment to the tablayout
     static class MyAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragments = new ArrayList<>();
         private final List<String> mFragmentTitles = new ArrayList<>();
