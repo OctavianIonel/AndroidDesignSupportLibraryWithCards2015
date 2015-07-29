@@ -3,6 +3,7 @@ package it.telecomitalia.designsupportlibrarysample;
 import android.content.res.Configuration;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
     private CoordinatorLayout rootLayout;
     private Toolbar toolbar;
     private TabLayout tabLayout;
+    private NavigationView navigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,23 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
+
+        navigation = (NavigationView) findViewById(R.id.navigation);
+        navigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                int id = menuItem.getItemId();
+                switch (id) {
+                    case R.id.navItem1:
+                        break;
+                    case R.id.navItem2:
+                        break;
+                    case R.id.navItem3:
+                        break;
+                }
+                return false;
+            }
+        });
 
         fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
         fabBtn.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
         }
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(viewPager);
+
     }
 
     @Override
