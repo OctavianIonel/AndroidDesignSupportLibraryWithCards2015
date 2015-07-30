@@ -9,6 +9,7 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.os.Bundle;
@@ -137,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //attaching the adapter to the viewpager (for the tablayout)
     private void setupViewPager(ViewPager viewPager) {
         MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment1(), "Category 1");
@@ -145,6 +147,15 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
+    //if the navigation view is open, when I press the "back" key, do not exit the application
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
 
     //adapter for adding fragment to the tablayout
     static class MyAdapter extends FragmentPagerAdapter {
