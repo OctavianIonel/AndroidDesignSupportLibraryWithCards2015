@@ -88,7 +88,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ModelViewHolder> {
 
         //int layoutType = viewType == 1 ? R.layout.card_sample_layout_1:R.layout.card_sample_layout_2;
 
-        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.card_sample_layout_3, parent, false);
+        View v= LayoutInflater.from(parent.getContext()).inflate(R.layout.card_layout, parent, false);
         ModelViewHolder mvh = new ModelViewHolder(v);
         return mvh;
 
