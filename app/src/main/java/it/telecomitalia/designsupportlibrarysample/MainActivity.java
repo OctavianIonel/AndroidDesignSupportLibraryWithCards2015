@@ -141,9 +141,8 @@ public class MainActivity extends AppCompatActivity {
     //attaching the adapter to the viewpager (for the tablayout)
     private void setupViewPager(ViewPager viewPager) {
         MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Fragment1(), "Category 1");
-        adapter.addFragment(new Fragment2(), "Category 2");
-        adapter.addFragment(new Fragment3(), "Category 3");
+        adapter.addFragment(new Fragment1(), "Offerte Attive");
+        adapter.addFragment(new Fragment2(), "Offerte Non Attive");
         viewPager.setAdapter(adapter);
     }
 
