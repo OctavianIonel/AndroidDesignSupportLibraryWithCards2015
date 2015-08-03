@@ -11,6 +11,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,7 +26,7 @@ import java.util.List;
 public class FragmentOfferte extends Fragment {
 
     private CoordinatorLayout rootLayout;
-    private Toolbar tab_toolbar;
+    private Toolbar toolbar;
     private TabLayout tabLayout;
     private NavigationView navigation;
     private FloatingActionButton fabBtn;
@@ -34,9 +35,8 @@ public class FragmentOfferte extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_offerte, container, false);
-        tab_toolbar = (Toolbar) view.findViewById(R.id.tab_toolbar);
-
-        tab_toolbar.setVisibility(View.VISIBLE);
+        toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         rootLayout = (CoordinatorLayout) view.findViewById(R.id.rootLayout);
         fabBtn = (FloatingActionButton) view.findViewById(R.id.fabBtn);
         //by pressing on the floating action button, a snackbar will pop-up from the bottom of the screen
@@ -64,7 +64,7 @@ public class FragmentOfferte extends Fragment {
 
     //attaching the adapter to the viewpager (for the tablayout)
     private void setupViewPager(ViewPager viewPager) {
-        MyAdapter adapter = new MyAdapter(getFragmentManager());
+        MyAdapter adapter = new MyAdapter(getChildFragmentManager());
         adapter.addFragment(new Fragment1(), "Offerte Attive");
         adapter.addFragment(new Fragment2(), "Offerte Non Attive");
         viewPager.setAdapter(adapter);
