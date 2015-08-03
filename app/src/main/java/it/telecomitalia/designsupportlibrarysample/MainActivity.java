@@ -53,17 +53,30 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
+//        rootLayout = (CoordinatorLayout) findViewById(R.id.rootLayout);
 
         navigation = (NavigationView) findViewById(R.id.navigation);
         navigation.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 int id = menuItem.getItemId();
+                Fragment fragment = null;
                 switch (id) {
                     case R.id.navItem1:
+                        toolbar.setVisibility(View.GONE);
+                        fragment = new FragmentOfferte();
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.content, fragment)
+                                .commit();
                         break;
                     case R.id.navItem2:
+                        toolbar.setVisibility(View.VISIBLE);
+                        fragment = new Fragment3();
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.content, fragment)
+                                .commit();
                         break;
                     case R.id.navItem3:
                         break;
@@ -72,32 +85,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
-        //by pressing on the floating action button, a snackbar will pop-up from the bottom of the screen
-        fabBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Snackbar.make(rootLayout, "Hello. I am Snackbar!", Snackbar.LENGTH_SHORT)
-                        .setAction("Undo", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                            }
-                        })
-                        .show();
-            }
-        });
-
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
-//        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
-//        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
-//        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
-
-
-        if (viewPager != null) {
-            setupViewPager(viewPager);
-        }
-        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
-        tabLayout.setupWithViewPager(viewPager);
+//        fabBtn = (FloatingActionButton) findViewById(R.id.fabBtn);
+//        //by pressing on the floating action button, a snackbar will pop-up from the bottom of the screen
+//        fabBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Snackbar.make(rootLayout, "Hello. I am Snackbar!", Snackbar.LENGTH_SHORT)
+//                        .setAction("Undo", new View.OnClickListener() {
+//                            @Override
+//                            public void onClick(View v) {
+//                            }
+//                        })
+//                        .show();
+//            }
+//        });
+//
+//        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+////        tabLayout.addTab(tabLayout.newTab().setText("Tab 1"));
+////        tabLayout.addTab(tabLayout.newTab().setText("Tab 2"));
+////        tabLayout.addTab(tabLayout.newTab().setText("Tab 3"));
+//
+//
+//        if (viewPager != null) {
+//            setupViewPager(viewPager);
+//        }
+//        tabLayout = (TabLayout) findViewById(R.id.tabLayout);
+//        tabLayout.setupWithViewPager(viewPager);
 
     }
 
@@ -138,13 +151,13 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    //attaching the adapter to the viewpager (for the tablayout)
-    private void setupViewPager(ViewPager viewPager) {
-        MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Fragment1(), "Offerte Attive");
-        adapter.addFragment(new Fragment2(), "Offerte Non Attive");
-        viewPager.setAdapter(adapter);
-    }
+//    //attaching the adapter to the viewpager (for the tablayout)
+//    private void setupViewPager(ViewPager viewPager) {
+//        MyAdapter adapter = new MyAdapter(getSupportFragmentManager());
+//        adapter.addFragment(new Fragment1(), "Offerte Attive");
+//        adapter.addFragment(new Fragment2(), "Offerte Non Attive");
+//        viewPager.setAdapter(adapter);
+//    }
 
     //if the navigation view is open, when I press the "back" key, do not exit the application
     @Override
@@ -156,33 +169,33 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    //adapter for adding fragment to the tablayout
-    static class MyAdapter extends FragmentPagerAdapter {
-        private final List<Fragment> mFragments = new ArrayList<>();
-        private final List<String> mFragmentTitles = new ArrayList<>();
-
-        public MyAdapter(FragmentManager fm) {
-            super(fm);
-        }
-
-        public void addFragment(Fragment fragment, String title) {
-            mFragments.add(fragment);
-            mFragmentTitles.add(title);
-        }
-
-        @Override
-        public Fragment getItem(int position) {
-            return mFragments.get(position);
-        }
-
-        @Override
-        public int getCount() {
-            return mFragments.size();
-        }
-
-        @Override
-        public CharSequence getPageTitle(int position) {
-            return mFragmentTitles.get(position);
-        }
-    }
+//    //adapter for adding fragment to the tablayout
+//    static class MyAdapter extends FragmentPagerAdapter {
+//        private final List<Fragment> mFragments = new ArrayList<>();
+//        private final List<String> mFragmentTitles = new ArrayList<>();
+//
+//        public MyAdapter(FragmentManager fm) {
+//            super(fm);
+//        }
+//
+//        public void addFragment(Fragment fragment, String title) {
+//            mFragments.add(fragment);
+//            mFragmentTitles.add(title);
+//        }
+//
+//        @Override
+//        public Fragment getItem(int position) {
+//            return mFragments.get(position);
+//        }
+//
+//        @Override
+//        public int getCount() {
+//            return mFragments.size();
+//        }
+//
+//        @Override
+//        public CharSequence getPageTitle(int position) {
+//            return mFragmentTitles.get(position);
+//        }
+//    }
 }
