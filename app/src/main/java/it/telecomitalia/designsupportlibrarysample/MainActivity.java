@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(MenuItem menuItem) {
                 int id = menuItem.getItemId();
                 Fragment fragment = null;
+                menuItem.setChecked(true);
                 switch (id) {
                     case R.id.navItem1:
                         toolbar.setVisibility(View.GONE);
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                                 .beginTransaction()
                                 .replace(R.id.content, fragment)
                                 .commit();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                        drawerLayout.closeDrawers();
                         break;
                     case R.id.navItem2:
                         toolbar.setVisibility(View.VISIBLE);
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                                 .beginTransaction()
                                 .replace(R.id.content, fragment)
                                 .commit();
-                        drawerLayout.closeDrawer(GravityCompat.START);
+                        drawerLayout.closeDrawers();
                         break;
                     case R.id.navItem3:
                         break;
