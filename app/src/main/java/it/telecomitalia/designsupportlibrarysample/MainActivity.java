@@ -93,6 +93,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
+        Fragment fragment = new FragmentOfferte();
+        toolbar.setVisibility(View.GONE);
+        getSupportFragmentManager().beginTransaction().replace(R.id.content, fragment).commit();
         drawerToggle.syncState();
     }
 
