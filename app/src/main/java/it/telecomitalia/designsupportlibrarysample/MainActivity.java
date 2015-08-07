@@ -16,7 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-
+/**
+ * Created by octavian on 7/29/15.
+ */
 
 public class MainActivity extends AppCompatActivity {
 
@@ -65,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.navItem2:
                         toolbar.setVisibility(View.VISIBLE);
-                        fragment = new Fragment3();
+                        fragment = new Fragment2();
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.content, fragment)
@@ -73,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
                         drawerLayout.closeDrawers();
                         break;
                     case R.id.navItem3:
+                        toolbar.setVisibility(View.VISIBLE);
+                        fragment = new Fragment3();
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.content, fragment)
+                                .commit();
+                        drawerLayout.closeDrawers();
                         break;
                 }
                 return false;
