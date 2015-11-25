@@ -46,48 +46,48 @@
             android:layout_alignParentRight="true">
 
             <TextView
-                android:id="@+id/id_data"
+                android:id="@+id/id_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:text="id_data"
+                android:text="id_date"
                 android:textSize="16sp"
                 android:textColor="@color/custom_middle_grey" />
 
             <TextView
-                android:id="@+id/id_orario"
+                android:id="@+id/id_timetable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
                 android:layout_marginBottom="5dp"
-                android:text="id_orario"
+                android:text="id_timetable"
                 android:textSize="16sp"
                 android:textColor="@color/custom_middle_grey"/>
 
             <TextView
-                android:id="@+id/id_aula"
+                android:id="@+id/id_room"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:text="id_aula"
+                android:text="id_room"
                 android:textSize="10sp"
                 android:textColor="@color/custom_white_grey"/>
 
             <TextView
-                android:id="@+id/id_indirizzo1"
+                android:id="@+id/id_address1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:text="id_indirizzo1"
+                android:text="id_address1"
                 android:textSize="10sp"
                 android:textColor="@color/custom_white_grey"/>
 
             <TextView
-                android:id="@+id/id_indirizzo2"
+                android:id="@+id/id_address2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="4dp"
-                android:text="id_indirizzo2"
+                android:text="id_address2"
                 android:textSize="10sp"
                 android:textColor="@color/custom_white_grey"
                 android:layout_alignParentRight="false" />

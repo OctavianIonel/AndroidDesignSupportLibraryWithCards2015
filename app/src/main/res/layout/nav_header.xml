@@ -8,7 +8,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/tim_300"
+        android:src="@drawable/android_photo"
         android:scaleType="centerCrop" />
 
 
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|right"
         android:layout_margin="16dp"
-        android:text="TIM Tokky"
+        android:text="Navigation View"
         android:textSize="24sp"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
 

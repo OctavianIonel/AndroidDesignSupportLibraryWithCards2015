@@ -1,4 +1,4 @@
-package it.telecomitalia.designsupportlibrarysample;
+package it.octavianionel.designsupportlibrarysample;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -42,11 +42,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ModelViewHolder> {
             cardViewCv=(CardView)itemView.findViewById(R.id.cv);
             photoIv=itemView.findViewById(R.id.id_photo);
             titleTv=(TextView)itemView.findViewById(R.id.id_title);
-            dataTv=(TextView)itemView.findViewById(R.id.id_data);
-            orarioTv=(TextView)itemView.findViewById(R.id.id_orario);
-            aulaTv=(TextView)itemView.findViewById(R.id.id_aula);
-            indirizzo1Tv=(TextView)itemView.findViewById(R.id.id_indirizzo1);
-            indirizzo2Tv=(TextView)itemView.findViewById(R.id.id_indirizzo2);
+            dataTv=(TextView)itemView.findViewById(R.id.id_date);
+            orarioTv=(TextView)itemView.findViewById(R.id.id_timetable);
+            aulaTv=(TextView)itemView.findViewById(R.id.id_room);
+            indirizzo1Tv=(TextView)itemView.findViewById(R.id.id_address1);
+            indirizzo2Tv=(TextView)itemView.findViewById(R.id.id_address2);
             emailIb=(ImageButton)itemView.findViewById(R.id.id_email);
             deleteIb=(ImageButton)itemView.findViewById(R.id.id_delete);
 

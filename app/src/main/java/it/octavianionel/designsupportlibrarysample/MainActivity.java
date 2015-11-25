@@ -1,4 +1,4 @@
-package it.telecomitalia.designsupportlibrarysample;
+package it.octavianionel.designsupportlibrarysample;
 
 import android.content.res.Configuration;
 import android.support.design.widget.CoordinatorLayout;
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 switch (id) {
                     case R.id.navItem1:
                         toolbar.setVisibility(View.GONE);
-                        fragment = new FragmentOfferte();
+                        fragment = new FragmentOffers();
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.content, fragment)
@@ -93,7 +93,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
-        Fragment fragment = new FragmentOfferte();
+        Fragment fragment = new FragmentOffers();
         toolbar.setVisibility(View.GONE);
         getSupportFragmentManager().beginTransaction().replace(R.id.content, fragment).commit();
         drawerToggle.syncState();

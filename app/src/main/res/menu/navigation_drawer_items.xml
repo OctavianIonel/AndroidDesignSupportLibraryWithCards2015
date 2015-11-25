@@ -5,16 +5,16 @@
         <item
             android:id="@+id/navItem1"
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Offerte"/>
+            android:title="Cards, toolbar, tablayout"/>
         <item
             android:id="@+id/navItem2"
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="FAQ"/>
+            android:title="Cards, swipe and delete cards"/>
 
         <item
             android:id="@+id/navItem3"
             android:icon="@drawable/ic_action_location_found_dark"
-            android:title="Termini e condizioni"/>
+            android:title="Generic fragment"/>
 
         <!--<item-->
             <!--android:id="@+id/navItem4"-->

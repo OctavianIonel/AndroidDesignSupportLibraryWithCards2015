@@ -1,4 +1,4 @@
-package it.telecomitalia.designsupportlibrarysample;
+package it.octavianionel.designsupportlibrarysample;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,6 @@ import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -24,7 +23,7 @@ import java.util.List;
 /**
  * Created by octavian on 8/3/15.
  */
-public class FragmentOfferte extends Fragment {
+public class FragmentOffers extends Fragment {
 
     private CoordinatorLayout rootLayout;
     private Toolbar toolbar;
@@ -35,7 +34,7 @@ public class FragmentOfferte extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_offerte, container, false);
+        View view = inflater.inflate(R.layout.fragment_offers, container, false);
         toolbar = (Toolbar) view.findViewById(R.id.toolbar);
         ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
         rootLayout = (CoordinatorLayout) view.findViewById(R.id.rootLayout);
@@ -66,8 +65,8 @@ public class FragmentOfferte extends Fragment {
     //attaching the adapter to the viewpager (for the tablayout)
     private void setupViewPager(ViewPager viewPager) {
         MyAdapter adapter = new MyAdapter(getChildFragmentManager());
-        adapter.addFragment(new Fragment1(), "Offerte Attive");
-        adapter.addFragment(new Fragment2(), "Offerte Non Attive");
+        adapter.addFragment(new Fragment1(), "Tab 1");
+        adapter.addFragment(new Fragment2(), "Tab 2");
         viewPager.setAdapter(adapter);
     }
 

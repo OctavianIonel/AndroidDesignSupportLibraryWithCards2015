@@ -1,4 +1,4 @@
-package it.telecomitalia.designsupportlibrarysample;
+package it.octavianionel.designsupportlibrarysample;
 
 /**
  * Created by octavian on 7/28/15.

@@ -1,4 +1,4 @@
-package it.telecomitalia.designsupportlibrarysample;
+package it.octavianionel.designsupportlibrarysample;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,7 +9,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -28,7 +27,7 @@ public class Fragment1 extends Fragment {
         super.onCreate(savedInstanceState);
         mCards=new ArrayList<CardInfoModel>();
         for (int i=0;i<15;i++) {
-            CardInfoModel cardInfoModel = new CardInfoModel(0, "The quick brown fox jumps over the lazy dog #" + Integer.toString(i), "Data", "Orario prenotazione", "Anguillotto da Pisa", "Indirizzo 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
+            CardInfoModel cardInfoModel = new CardInfoModel(0, "The quick brown fox jumps over the lazy dog #" + Integer.toString(i), "Date", "Timetable", "Room X", "Address 1", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
             if (i<=3) {
                 cardInfoModel.setStatus(2);
             } else {

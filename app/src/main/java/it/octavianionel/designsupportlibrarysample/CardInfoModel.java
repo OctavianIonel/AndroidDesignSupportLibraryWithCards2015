@@ -1,11 +1,11 @@
-package it.telecomitalia.designsupportlibrarysample;
+package it.octavianionel.designsupportlibrarysample;
 
 /**
  * Created by octavian on 7/28/15.
  */
 public class CardInfoModel extends CardModel {
 
-    private int status      =1; //1 for "in corso", 2 for "passati" and 3 for "prossimi inviti"
+    private int status      =1; //1 for "blue", 2 for "red" and 3 for "yellow"
     private String date;
     private String orarioPrenotazione;
     private String aula;
