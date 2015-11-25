@@ -26,11 +26,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ModelViewHolder> {
         CardView cardViewCv=null;
         View photoIv=null;
         TextView titleTv=null;
-        TextView dataTv=null;
-        TextView orarioTv=null;
-        TextView aulaTv=null;
-        TextView indirizzo1Tv=null;
-        TextView indirizzo2Tv=null;
+        TextView dateTv =null;
+        TextView timetableTv =null;
+        TextView roomTv =null;
+        TextView address1Tv =null;
+        TextView address2Tv =null;
         ImageButton emailIb;
         ImageButton deleteIb;
 
@@ -42,11 +42,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ModelViewHolder> {
             cardViewCv=(CardView)itemView.findViewById(R.id.cv);
             photoIv=itemView.findViewById(R.id.id_photo);
             titleTv=(TextView)itemView.findViewById(R.id.id_title);
-            dataTv=(TextView)itemView.findViewById(R.id.id_date);
-            orarioTv=(TextView)itemView.findViewById(R.id.id_timetable);
-            aulaTv=(TextView)itemView.findViewById(R.id.id_room);
-            indirizzo1Tv=(TextView)itemView.findViewById(R.id.id_address1);
-            indirizzo2Tv=(TextView)itemView.findViewById(R.id.id_address2);
+            dateTv =(TextView)itemView.findViewById(R.id.id_date);
+            timetableTv =(TextView)itemView.findViewById(R.id.id_timetable);
+            roomTv =(TextView)itemView.findViewById(R.id.id_room);
+            address1Tv =(TextView)itemView.findViewById(R.id.id_address1);
+            address2Tv =(TextView)itemView.findViewById(R.id.id_address2);
             emailIb=(ImageButton)itemView.findViewById(R.id.id_email);
             deleteIb=(ImageButton)itemView.findViewById(R.id.id_delete);
 
@@ -99,11 +99,11 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.ModelViewHolder> {
     public void onBindViewHolder(ModelViewHolder holder, final int position) {
 
         holder.titleTv.setText(cards.get(position).getTitle());
-        holder.dataTv.setText(cards.get(position).getDate());
-        holder.orarioTv.setText(cards.get(position).getOrarioPrenotazione());
-        holder.aulaTv.setText(cards.get(position).getAula());
-        holder.indirizzo1Tv.setText(cards.get(position).getIndirizzo1());
-        holder.indirizzo2Tv.setText(cards.get(position).getIndirizzo2());
+        holder.dateTv.setText(cards.get(position).getDate());
+        holder.timetableTv.setText(cards.get(position).getTimetable());
+        holder.roomTv.setText(cards.get(position).getRoom());
+        holder.address1Tv.setText(cards.get(position).getAddress1());
+        holder.address2Tv.setText(cards.get(position).getAddress2());
 
         CardInfoModel model = cards.get(position);
 

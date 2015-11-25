@@ -83,6 +83,15 @@ public class MainActivity extends AppCompatActivity {
                                 .commit();
                         drawerLayout.closeDrawers();
                         break;
+                    case R.id.navItem4:
+                        toolbar.setVisibility(View.VISIBLE);
+                        fragment = new Fragment4();
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.content, fragment)
+                                .commit();
+                        drawerLayout.closeDrawers();
+                        break;
                 }
                 return false;
             }

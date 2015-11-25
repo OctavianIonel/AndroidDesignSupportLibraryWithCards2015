@@ -50,6 +50,9 @@ public class Fragment2 extends Fragment {
         final RVAdapter adapter = new RVAdapter(mCards);
         mRecyclerView.setAdapter(adapter);
 
+        //adding colors to swipe & refresh
+        mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_orange_dark, android.R.color.holo_purple, android.R.color.holo_blue_dark);
+
         mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {

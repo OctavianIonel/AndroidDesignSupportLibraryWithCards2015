@@ -7,22 +7,22 @@ public class CardInfoModel extends CardModel {
 
     private int status      =1; //1 for "blue", 2 for "red" and 3 for "yellow"
     private String date;
-    private String orarioPrenotazione;
-    private String aula;
-    private String indirizzo1;
-    private String indirizzo2;
+    private String timetable;
+    private String room;
+    private String address1;
+    private String address2;
 
     public CardInfoModel(int identifier, String title) {
         super(identifier, title);
     }
 
-    public CardInfoModel(int identifier, String title, String date, String orarioPrenotazione, String aula, String indirizzo1, String indirizzo2) {
+    public CardInfoModel(int identifier, String title, String date, String timetable, String room, String address1, String address2) {
         this(identifier, title);
         this.date=date;
-        this.orarioPrenotazione=orarioPrenotazione;
-        this.aula=aula;
-        this.indirizzo1=indirizzo1;
-        this.indirizzo2=indirizzo2;
+        this.timetable =timetable;
+        this.room =room;
+        this.address1 =address1;
+        this.address2 =address2;
     }
 
 
@@ -34,36 +34,36 @@ public class CardInfoModel extends CardModel {
         this.date = date;
     }
 
-    public String getOrarioPrenotazione() {
-        return orarioPrenotazione;
+    public String getTimetable() {
+        return timetable;
     }
 
-    public void setOrarioPrenotazione(String orarioPrenotazione) {
-        this.orarioPrenotazione = orarioPrenotazione;
+    public void setTimetable(String timetable) {
+        this.timetable = timetable;
     }
 
-    public String getAula() {
-        return aula;
+    public String getRoom() {
+        return room;
     }
 
-    public void setAula(String aula) {
-        this.aula = aula;
+    public void setRoom(String room) {
+        this.room = room;
     }
 
-    public String getIndirizzo1() {
-        return indirizzo1;
+    public String getAddress1() {
+        return address1;
     }
 
-    public void setIndirizzo1(String indirizzo1) {
-        this.indirizzo1 = indirizzo1;
+    public void setAddress1(String address1) {
+        this.address1 = address1;
     }
 
-    public String getIndirizzo2() {
-        return indirizzo2;
+    public String getAddress2() {
+        return address2;
     }
 
-    public void setIndirizzo2(String indirizzo2) {
-        this.indirizzo2 = indirizzo2;
+    public void setAddress2(String address2) {
+        this.address2 = address2;
     }
 
     public int getStatus() {

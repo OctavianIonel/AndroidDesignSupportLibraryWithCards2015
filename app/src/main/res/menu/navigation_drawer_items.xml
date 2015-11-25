@@ -16,10 +16,10 @@
             android:icon="@drawable/ic_action_location_found_dark"
             android:title="Generic fragment"/>
 
-        <!--<item-->
-            <!--android:id="@+id/navItem4"-->
-            <!--android:icon="@drawable/ic_action_location_found_dark"-->
-            <!--android:title="Contact"/>-->
+        <item
+            android:id="@+id/navItem4"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Expandable cards"/>
     </group>
 
 </menu>

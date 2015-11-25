@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_expand"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:id="@+id/id_title_expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id_title_expand"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/custom_dark_grey"
+            android:layout_marginBottom="10dp" />
+
+        <ImageButton
+            android:id="@+id/keyboard_arrow_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_title_expand"
+            android:paddingBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_keyboard_arrow_down_grey600_24dp"
+            android:background="#0000"/>
+
+
+        <RelativeLayout
+            android:id="@+id/card_expand_inner_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/keyboard_arrow_down"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:background="@color/custom_teal"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/id_date_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:paddingTop="10dp"
+                android:text="id_date_expand"
+                android:textSize="16sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/id_timetable_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_date_expand"
+                android:layout_marginLeft="4dp"
+                android:layout_marginBottom="5dp"
+                android:text="id_timetable_expand"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/id_room_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_timetable_expand"
+                android:layout_marginLeft="4dp"
+                android:text="id_room_expand"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/id_address1_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_room_expand"
+                android:layout_marginLeft="4dp"
+                android:text="id_address1_expand"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/id_address2_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_address1_expand"
+                android:layout_marginLeft="4dp"
+                android:text="id_address2_expand"
+                android:textSize="10sp"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="false" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
