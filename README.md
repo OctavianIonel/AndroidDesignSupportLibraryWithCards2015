@@ -25,3 +25,5 @@ First, add the following external dependencies to your gradle in Android Studio:
 
 * Repo owner or admin
 OctavianIonel
+
+The project is provided under Apache license. Enjoy!
