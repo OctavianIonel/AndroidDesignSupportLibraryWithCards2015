@@ -9,7 +9,7 @@ This README would normally document whatever steps are necessary to get your app
 1.0
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
-### How do I get set up? ###
+### Details of this project ###
 
 * Summary of set up
 The project includes: CoordinatorLayout, AppBarLayout (Toolbar & TabLayout), NavigationView, FloatingActionButton, Snackbar. 
