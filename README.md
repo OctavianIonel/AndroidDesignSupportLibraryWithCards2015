@@ -25,15 +25,6 @@ Demo:
 
 ![alternate text](https://github.com/OctavianIonel/AndroidDesignSupportLibraryWithCards2015/blob/master/cards_animation.gif)
 
-
-Dependencies to your gradle file in Android Studio:
-    
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    
-    compile 'com.android.support:design:23.1.1'
-    
-    compile 'com.android.support:recyclerview-v7:23.1.1'
-    
-    compile 'com.android.support:cardview-v7:23.1.1'
+In order to test this project, all you have to do is to clone it.
 
 The project is provided under Apache license. Enjoy!
