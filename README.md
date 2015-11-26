@@ -31,9 +31,9 @@ Demo:
 
 
 Dependencies to your gradle file in Android Studio:
-    *compile 'com.android.support:appcompat-v7:23.1.1'
-    *compile 'com.android.support:design:23.1.1'
-    *compile 'com.android.support:recyclerview-v7:23.1.1'
-    *compile 'com.android.support:cardview-v7:23.1.1'
+    #compile 'com.android.support:appcompat-v7:23.1.1'
+    #compile 'com.android.support:design:23.1.1'
+    #compile 'com.android.support:recyclerview-v7:23.1.1'
+    #compile 'com.android.support:cardview-v7:23.1.1'
 
 The project is provided under Apache license. Enjoy!
