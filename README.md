@@ -2,11 +2,7 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
-### What is this repository for? ###
 
-* Quick summary
-* Version
-1.0
 * [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
 
 ### Details of this project ###
