@@ -27,6 +27,8 @@ Demo:
 
 ![alternate text](https://github.com/OctavianIonel/AndroidDesignSupportLibraryWithCards2015/blob/master/cards_animation.gif)
 
+![alternate text](https://github.com/OctavianIonel/AndroidDesignSupportLibraryWithCards2015/blob/master/progressbar_with_threshold.gif)
+
 In order to test this project, all you have to do is to clone it.
 
 Enjoy!

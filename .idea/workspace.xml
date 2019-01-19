@@ -9,16 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2ae24ff-7a1c-478c-adf9-12c8a62cfff6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeControllerActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/RVAdapterProgressbar.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/RVAdapterProgressbar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c2ae24ff-7a1c-478c-adf9-12c8a62cfff6" name="Default" comment="" />
     <ignored path="AndroidDesignSupportLibraryWithCards2015GitHub.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,7 +86,7 @@
           <entry key="java" value="2589" />
           <entry key="kt" value="268" />
           <entry key="md" value="328" />
-          <entry key="xml" value="277" />
+          <entry key="xml" value="285" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -104,7 +95,7 @@
           <entry key="JAVA" value="2589" />
           <entry key="Kotlin" value="268" />
           <entry key="PLAIN_TEXT" value="328" />
-          <entry key="XML" value="277" />
+          <entry key="XML" value="285" />
         </counts>
       </usages-collector>
     </session>
@@ -168,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="48" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="48" />
+            <state relative-caret-position="68">
+              <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
               <folding>
                 <element signature="e#551#569#0" expanded="true" />
                 <element signature="e#597#615#0" expanded="true" />
@@ -192,11 +183,11 @@
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="183">
-              <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+              <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3072#3867#0" expanded="true" />
@@ -2496,8 +2487,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeControllerActions.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/RVAdapterProgressbar.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml" />
       </list>
     </option>
   </component>
@@ -2602,7 +2593,7 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Fragment&#9;FILE&#9;file://C:/Workspace/AndroidStudioProjects/AndroidDesignSupportLibraryWithCards2015/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java&#10;bu&#9;FILE&#9;file://C:/Workspace/AndroidStudioProjects/AndroidDesignSupportLibraryWithCards2015/app/build.gradle" />
     <property name="device.picker.selection" value="712KPQJ1247836" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TIMTokky_tablayout_viewpager" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="recentsLimit" value="5" />
     <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
@@ -2843,7 +2834,7 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32925472" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39933258" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -2858,7 +2849,7 @@
       <window_info anchor="bottom" id="Build" order="14" weight="0.2625139" />
       <window_info anchor="bottom" id="Android Profiler" order="15" />
       <window_info anchor="bottom" id="Statistic" order="16" />
-      <window_info anchor="bottom" id="Logcat" order="17" weight="0.676307" />
+      <window_info active="true" anchor="bottom" id="Logcat" order="17" visible="true" weight="0.676307" />
       <window_info anchor="right" id="Gradle" order="0" weight="0.32995737" />
       <window_info anchor="right" id="Preview" order="1" weight="0.32995737" />
       <window_info anchor="right" id="Device File Explorer" order="2" side_tool="true" />
@@ -3162,22 +3153,10 @@
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="48" />
-          <folding>
-            <element signature="e#551#569#0" expanded="true" />
-            <element signature="e#597#615#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="164" column="30" lean-forward="true" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
+          <caret line="164" column="30" selection-start-line="164" selection-start-column="30" selection-end-line="164" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3072#3867#0" expanded="true" />
@@ -3191,6 +3170,18 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+          <folding>
+            <element signature="e#551#569#0" expanded="true" />
+            <element signature="e#597#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
     </entry>
   </component>
 </project>
