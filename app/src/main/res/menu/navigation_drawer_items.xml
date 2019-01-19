@@ -20,6 +20,11 @@
             android:id="@+id/navItem4"
             android:icon="@drawable/ic_action_location_found_dark"
             android:title="Expandable cards"/>
+
+        <item
+            android:id="@+id/navItem5"
+            android:icon="@drawable/ic_action_location_found_dark"
+            android:title="Progressbar with threshold"/>
     </group>
 
 </menu>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ProgressBar
+            android:id="@+id/pfm_progressbar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:progressDrawable="@drawable/progress_drawable"/>
+
+    <View
+            android:id="@+id/pfm_threshdold_bar_view"
+            android:layout_width="3dp"
+            android:layout_height="30dp"
+            android:background="@color/gray_main_6F6F6F"/>
+
+    <TextView
+            android:id="@+id/pfm_threshold_left_tv"
+            android:layout_below="@id/pfm_progressbar"
+            android:layout_marginRight="8dp"
+            android:gravity="bottom"
+            android:layout_alignBottom="@id/pfm_threshdold_bar_view"
+            android:layout_alignRight="@id/pfm_threshdold_bar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Left threshold" />
+
+    <TextView
+            android:id="@+id/pfm_threshold_right_tv"
+            android:layout_below="@id/pfm_progressbar"
+            android:layout_marginLeft="8dp"
+            android:gravity="bottom"
+            android:layout_alignBottom="@id/pfm_threshdold_bar_view"
+            android:layout_alignLeft="@id/pfm_threshdold_bar_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Right threshold"/>
+
+</RelativeLayout>

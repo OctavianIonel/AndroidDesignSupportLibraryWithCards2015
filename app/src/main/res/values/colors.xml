@@ -7,4 +7,20 @@
     <color name="custom_red">#F44336</color>
     <color name="defaultColor">#330000</color>
     <color name="custom_yellow"> #FFEB3B</color>
+
+    <color name="colorPrimary">#258900</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="input_bg">@android:color/white</color>
+
+    <color name="gray_main_6F6F6F">#6f6f6f</color>
+
+    <color name="orange_main_FA9600">#FA9600</color>
+    <color name="orange_main_FC9700">#FC9700</color>
+    <color name="orange_main_FCCC7B">#FCCC7B</color>
+    <color name="orange_main_FEE6BD">#FEE6BD</color>
+    <color name="orange_FBB040">#FBB040</color>
+    <color name="orange_B76A00">#b76a00</color>
+    <color name="orange_FA9807">#fa9807</color>
 </resources>
