@@ -19,6 +19,8 @@ In the third fragment, Fragment3 (NavigationView > Generic fragment), there is a
 
 The fourth fragment, Fragment4 (NavigationView > Expandable cards), there is an example of cards which expand by clicking on the respective arrow.
 
+The fifth fragment, Fragment5 has a RecyclerView with custom Progressbar. The Progressbar has a vertical threshold bar and a text below it. The text will be positioned either on the left side or the right side of the threshold bar, based if either the thresold is before the middle of the progressbar or after it.
+
 The project is made according to the MVC design pattern. 
 
 Demo:
