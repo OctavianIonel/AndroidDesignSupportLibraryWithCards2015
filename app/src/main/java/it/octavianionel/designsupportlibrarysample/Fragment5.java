@@ -1,12 +1,14 @@
 package it.octavianionel.designsupportlibrarysample;
 
 
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.helper.ItemTouchHelper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +26,7 @@ public class Fragment5 extends Fragment {
     private LinearLayoutManager layoutManager;
     private ArrayList<ProgressbarModel> items;
     private SwipeRefreshLayout mSwipeRefreshLayout;
+    private SwipeController swipeController = null;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -104,7 +107,25 @@ public class Fragment5 extends Fragment {
         recyclerView.setAdapter(adapter);
         int position = layoutManager.findFirstVisibleItemPosition();
         recyclerView.getRecycledViewPool().setMaxRecycledViews(adapter.getItemViewType(position), 0);
-        adapter.notifyDataSetChanged();
+
+        swipeController = new SwipeController(new SwipeControllerActions() {
+            @Override
+            public void onRightClicked(int position) {
+                adapter.notifyItemRemoved(position);
+                adapter.notifyItemRangeChanged(position, adapter.getItemCount());
+            }
+        });
+
+        ItemTouchHelper itemTouchhelper = new ItemTouchHelper(swipeController);
+        itemTouchhelper.attachToRecyclerView(recyclerView);
+
+
+        recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
+            @Override
+            public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
+                swipeController.onDraw(getActivity(), c, adapter);
+            }
+        });
 
         mSwipeRefreshLayout.setColorSchemeResources(android.R.color.holo_orange_dark, android.R.color.holo_purple, android.R.color.holo_blue_dark);
 
