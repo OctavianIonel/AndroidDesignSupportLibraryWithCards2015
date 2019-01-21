@@ -2,6 +2,7 @@ package it.octavianionel.designsupportlibrarysample;
 
 
 import android.graphics.Canvas;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.app.Fragment;
@@ -123,7 +124,7 @@ public class Fragment5 extends Fragment {
         recyclerView.addItemDecoration(new RecyclerView.ItemDecoration() {
             @Override
             public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
-                swipeController.onDraw(getActivity(), c, adapter);
+                swipeController.onDraw(getActivity(), c, adapter, Color.GRAY, R.drawable.icon_white_plus, R.drawable.icon_modifica);
             }
         });
 

@@ -11,9 +11,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2ae24ff-7a1c-478c-adf9-12c8a62cfff6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_plus_green.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_white_plus.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_modifica.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java" afterDir="false" />
     </list>
     <ignored path="AndroidDesignSupportLibraryWithCards2015GitHub.iws" />
@@ -71,7 +71,7 @@
           <entry key="li" value="5" />
           <entry key="md" value="3" />
           <entry key="png" value="6" />
-          <entry key="webp" value="5" />
+          <entry key="webp" value="6" />
           <entry key="xml" value="30" />
         </counts>
       </usages-collector>
@@ -79,7 +79,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="Groovy" value="13" />
-          <entry key="Image" value="11" />
+          <entry key="Image" value="12" />
           <entry key="JAVA" value="29" />
           <entry key="Kotlin" value="6" />
           <entry key="Layout Inspector" value="5" />
@@ -90,7 +90,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="32" />
-          <entry key="java" value="3410" />
+          <entry key="java" value="3618" />
           <entry key="kt" value="268" />
           <entry key="md" value="356" />
           <entry key="xml" value="311" />
@@ -99,7 +99,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="32" />
-          <entry key="JAVA" value="3410" />
+          <entry key="JAVA" value="3618" />
           <entry key="Kotlin" value="268" />
           <entry key="PLAIN_TEXT" value="356" />
           <entry key="XML" value="311" />
@@ -116,7 +116,7 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="537">
-              <caret line="125" column="66" selection-start-line="125" selection-start-column="66" selection-end-line="125" selection-end-column="66" />
+              <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5824#6090#0" expanded="true" />
@@ -184,8 +184,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="212" column="89" selection-start-line="212" selection-start-column="89" selection-end-line="212" selection-end-column="89" />
+            <state relative-caret-position="899">
+              <caret line="211" column="55" lean-forward="true" selection-start-line="211" selection-start-column="55" selection-end-line="211" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5352#5580#0" expanded="true" />
@@ -2456,8 +2456,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeControllerActions.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/RVAdapterProgressbar.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/item_progressbar.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java" />
       </list>
     </option>
@@ -2536,7 +2536,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="SearchEverywhereHistoryKey" value="Fragment&#9;FILE&#9;file://C:/Workspace/AndroidStudioProjects/AndroidDesignSupportLibraryWithCards2015/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java&#10;bu&#9;FILE&#9;file://C:/Workspace/AndroidStudioProjects/AndroidDesignSupportLibraryWithCards2015/app/build.gradle" />
-    <property name="device.picker.selection" value="ce0517153c48bf2903" />
+    <property name="device.picker.selection" value="712KPQJ1247836" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="recentsLimit" value="5" />
@@ -2769,7 +2769,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24946696" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24946696" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Build Variants" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -3123,20 +3123,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="125" column="66" selection-start-line="125" selection-start-column="66" selection-end-line="125" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5824#6090#0" expanded="true" />
-            <element signature="e#6089#6090#0" expanded="true" />
-            <element signature="e#6275#6513#0" expanded="true" />
-            <element signature="e#6512#6513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/pressed_delete_icon.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -3154,10 +3140,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/icon_white_plus.webp">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/Fragment5.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="126" column="35" selection-start-line="126" selection-start-column="35" selection-end-line="126" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5824#6090#0" expanded="true" />
+            <element signature="e#6089#6090#0" expanded="true" />
+            <element signature="e#6275#6513#0" expanded="true" />
+            <element signature="e#6512#6513#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/it/octavianionel/designsupportlibrarysample/SwipeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="212" column="89" selection-start-line="212" selection-start-column="89" selection-end-line="212" selection-end-column="89" />
+        <state relative-caret-position="899">
+          <caret line="211" column="55" lean-forward="true" selection-start-line="211" selection-start-column="55" selection-end-line="211" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5352#5580#0" expanded="true" />

@@ -159,7 +159,7 @@ public class SwipeController extends Callback {
         }
     }
 
-    private void drawButtons(Context context, Canvas c, RecyclerView.ViewHolder viewHolder, RVAdapterProgressbar adapter) {
+    private void drawButtons(Context context, Canvas c, RecyclerView.ViewHolder viewHolder, RVAdapterProgressbar adapter, int swipeButtonBackgroundColor, int addIconDrawable, int modifyIconDrawable) {
         float buttonWidthWithoutPadding = buttonWidth - 30;
         float corners = 0;
 
@@ -170,14 +170,14 @@ public class SwipeController extends Callback {
 //        c.drawRoundRect(leftButton, corners, corners, p);
 //        drawText("EDIT", c, leftButton, p);
         RectF rightButton = new RectF(itemView.getRight() - buttonWidthWithoutPadding, itemView.getTop(), itemView.getRight(), itemView.getBottom());
-        p.setColor(Color.GRAY);
+        p.setColor(swipeButtonBackgroundColor);
         c.drawRoundRect(rightButton, corners, corners, p);
 //        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_plus_green);
 //        c.drawBitmap(bitmap, (bitmap.getWidth()) / 4, 250, p);
         if (viewHolder.getAdapterPosition() % 2 == 0) {
-            drawText(context,"ADD", c, rightButton, p);
+            drawText(context, viewHolder, adapter,"ADD", c, rightButton, p, addIconDrawable, modifyIconDrawable);
         } else {
-            drawText(context,"MODIFY", c, rightButton, p);
+            drawText(context, viewHolder, adapter,"MODIFY", c, rightButton, p, addIconDrawable, modifyIconDrawable);
         }
 //        if (action.equals(ButtonsState.ACTION_ADD)) {
 //            drawText("ADD", c, rightButton, p);
@@ -195,7 +195,7 @@ public class SwipeController extends Callback {
         }
     }
 
-    private void drawText(Context context, String text, Canvas c, RectF button, Paint p) {
+    private void drawText(Context context, RecyclerView.ViewHolder viewHolder, RVAdapterProgressbar adapter, String text, Canvas c, RectF button, Paint p, int addIconDrawable, int modifyIconDrawable) {
         float textSize = 30;
         p.setColor(Color.WHITE);
         p.setAntiAlias(true);
@@ -207,17 +207,24 @@ public class SwipeController extends Callback {
         p.getTextBounds(text, 0, text.length(), bounds);
         BitmapFactory.Options opt = new BitmapFactory.Options();
         opt.inMutable = true;
-        Bitmap bitmap = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_white_plus, opt), 70, 70, false);
-        float combinedHeight = bitmap.getHeight() + spaceHeight + bounds.height();
-        c.drawBitmap(bitmap, button.centerX() - (bitmap.getWidth() / 2), button.top + spaceHeight, p);
-        c.drawText(text, button.centerX()-(textWidth/2), button.bottom - spaceHeight, p);
+        Bitmap bitmapAdd = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), addIconDrawable, opt), 70, 70, false);
+        Bitmap bitmapModify = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), modifyIconDrawable, opt), 70, 70, false);
+        if (viewHolder.getAdapterPosition() % 2 == 0) {
+            float combinedHeight = bitmapAdd.getHeight() + spaceHeight + bounds.height();
+            c.drawBitmap(bitmapAdd, button.centerX() - (bitmapAdd.getWidth() / 2), button.top + spaceHeight, p);
+            c.drawText(text, button.centerX() - (textWidth / 2), button.bottom - spaceHeight, p);
+        } else {
+            float combinedHeight = bitmapModify.getHeight() + spaceHeight + bounds.height();
+            c.drawBitmap(bitmapModify, button.centerX() - (bitmapModify.getWidth() / 2), button.top + spaceHeight, p);
+            c.drawText(text, button.centerX() - (textWidth / 2), button.bottom - spaceHeight, p);
+        }
 
 
     }
 
-    public void onDraw(Context context, Canvas c, RVAdapterProgressbar adapter) {
+    public void onDraw(Context context, Canvas c, RVAdapterProgressbar adapter, int swipeButtonBackgroundColor, int addIconDrawable, int modifyIconDrawable) {
         if (currentItemViewHolder != null) {
-            drawButtons(context, c, currentItemViewHolder, adapter);
+            drawButtons(context, c, currentItemViewHolder, adapter, swipeButtonBackgroundColor, addIconDrawable, modifyIconDrawable);
         }
     }
 }
