@@ -6,7 +6,9 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Rect;
 import android.graphics.RectF;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper.Callback;
 import android.view.MotionEvent;
@@ -112,7 +114,7 @@ public class SwipeController extends Callback {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 if (event.getAction() == MotionEvent.ACTION_DOWN) {
-                    setTouchUpListener(c, recyclerView, viewHolder, dX, dY, actionState, isCurrentlyActive);
+                    setTouchUpListener(c, recyclerView, viewHolder, dX / 4, dY, actionState, isCurrentlyActive);
                 }
                 return false;
             }
@@ -168,8 +170,10 @@ public class SwipeController extends Callback {
 //        c.drawRoundRect(leftButton, corners, corners, p);
 //        drawText("EDIT", c, leftButton, p);
         RectF rightButton = new RectF(itemView.getRight() - buttonWidthWithoutPadding, itemView.getTop(), itemView.getRight(), itemView.getBottom());
-        p.setColor(Color.RED);
+        p.setColor(Color.GRAY);
         c.drawRoundRect(rightButton, corners, corners, p);
+//        Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_plus_green);
+//        c.drawBitmap(bitmap, (bitmap.getWidth()) / 4, 250, p);
         if (viewHolder.getAdapterPosition() % 2 == 0) {
             drawText(context,"ADD", c, rightButton, p);
         } else {
@@ -192,14 +196,21 @@ public class SwipeController extends Callback {
     }
 
     private void drawText(Context context, String text, Canvas c, RectF button, Paint p) {
-        float textSize = 60;
+        float textSize = 30;
         p.setColor(Color.WHITE);
         p.setAntiAlias(true);
         p.setTextSize(textSize);
 
         float textWidth = p.measureText(text);
-        c.drawText(text, button.centerX()-(textWidth/2), button.centerY()+(textSize/2), p);
-//        Bitmap myLogo = BitmapFactory.decodeResource(context.getResources(), R.drawable.my_drawable);
+        float spaceHeight = 10; // change this to whatever looks good to you
+        Rect bounds = new Rect();
+        p.getTextBounds(text, 0, text.length(), bounds);
+        BitmapFactory.Options opt = new BitmapFactory.Options();
+        opt.inMutable = true;
+        Bitmap bitmap = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(context.getResources(), R.drawable.icon_white_plus, opt), 70, 70, false);
+        float combinedHeight = bitmap.getHeight() + spaceHeight + bounds.height();
+        c.drawBitmap(bitmap, button.centerX() - (bitmap.getWidth() / 2), button.top + spaceHeight, p);
+        c.drawText(text, button.centerX()-(textWidth/2), button.bottom - spaceHeight, p);
 
 
     }
